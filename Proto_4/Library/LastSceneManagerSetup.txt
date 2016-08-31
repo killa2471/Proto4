@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Conrads_files/Test_scene.unity
+  isLoaded: 1
+  isActive: 1
