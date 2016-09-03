@@ -91,6 +91,7 @@ ModelImporter:
     100166: Tip
     100168: Tip_end
     100170: //RootNode
+    100172: BezierCurve
     400000: Armature
     400002: Balloon_rim.001
     400004: Balloon_rim.002
@@ -177,7 +178,11 @@ ModelImporter:
     400166: Tip
     400168: Tip_end
     400170: //RootNode
+    400172: BezierCurve
+    2300000: BezierCurve
+    3300000: BezierCurve
     4300000: Plane.006
+    4300002: BezierCurve
     9500000: //RootNode
     13700000: Plane.006
   materials:
@@ -221,8 +226,8 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
-    tangentImportMode: 0
+    normalImportMode: 1
+    tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

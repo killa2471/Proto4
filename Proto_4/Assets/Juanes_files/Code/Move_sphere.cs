@@ -3,7 +3,6 @@ using System.Collections;
 
 public class Move_sphere : MonoBehaviour {
 	Rigidbody rigid;
-	public float Speed;
     public float floating = 10f;
 
 
@@ -21,11 +20,17 @@ public class Move_sphere : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-		float moveHorizontal = Input.GetAxis("Horizontal") * Speed;
-		float moveVertical = Input.GetAxis("Vertical") * Speed;
-      
+        if (Input.GetKey(KeyCode.Space))
+        {
+            floating += 5f * Time.deltaTime;
+        }
+        else if(floating > 0)
+        {
+          floating -= 5f * Time.deltaTime; 
+        }
 
-	    Vector3 movement = new Vector3 (moveHorizontal, floating, moveVertical);
+
+            Vector3 movement = new Vector3 (0f, floating, 0f);
         Debug.Log(movement);
 
 		rigid.AddForce(movement);
