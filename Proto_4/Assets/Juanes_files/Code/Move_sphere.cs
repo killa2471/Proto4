@@ -5,10 +5,8 @@ public class Move_sphere : MonoBehaviour {
 	Rigidbody rigid;
     public float floating = 10f;
 
-
     // Use this for initialization
     void Start () {
-
 		rigid = GetComponent<Rigidbody> ();
       
 
@@ -26,7 +24,7 @@ public class Move_sphere : MonoBehaviour {
         }
         else if(floating > 0)
         {
-          floating -= 5f * Time.deltaTime; 
+			floating -= 2.5f * Time.deltaTime; 
         }
 
 
